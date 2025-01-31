@@ -9,23 +9,55 @@
     body copy: 'Open Sans', sans-serif;
 */
 
+:root{
+
+    --night:            #182222;
+    --dark-slate-gray:  #405B5B;
+    --french-gray:      #e2dfe7;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
+}
+
+header img {
+    width: 100%;
+}
+
+main {
+    max-width: 1024px;
+    min-width: 256px;
+    padding: 5rem 8rem;
 }
 
 a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:white;
+    background-color: var(--french-gray);
     width: 10rem;
     height: 5rem;
     font-size: 1.5em;
     text-decoration: none;
-    color: #182222;
+    color: var(--night);
     font-family: 'Fjalla One', sans-serif;;
-    border: 3px solid #182222;
+    border: 3px solid var(--night);
     border-radius: 3px;
     margin-top: 2rem;
     margin-bottom: 4rem;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: 'Fjalla One', sans-serif;;
+    color: var(--night);
+
+}
+.section1 {
+
+}
+
+footer {
+    background-color: var(--night);
+    color: var(--dark-slate-gray);
 }
